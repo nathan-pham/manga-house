@@ -1,4 +1,8 @@
 import Root from "../components/Root"
+import PanelWrapper from "../components/PanelWrapper"
+import CenterPanel from "../components/PanelWrapper/CenterPanel"
+import SidePanel from "../components/PanelWrapper/SidePanel"
+
 import { TimeOutline } from "react-ionicons"
 
 function Manga({ src, title, chapter }) {
@@ -22,34 +26,34 @@ function Manga({ src, title, chapter }) {
     )
 }
 
-function AppWrapper({ children }) {
-    return (
-        <div className="max-w-2xl mx-auto">
-            { children }
-        </div>
-    )
-}
-
 export default function Dashboard() {
     return (
         <Root title="Dashboard">
-            <AppWrapper>
-                <Manga 
-                    src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
-                    title="Solo Leveling" 
-                    chapter="500" 
-                />
-                <Manga 
-                    src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
-                    title="Solo Leveling" 
-                    chapter="500" 
-                />
-                <Manga 
-                    src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
-                    title="Solo Leveling" 
-                    chapter="500" 
-                />
-            </AppWrapper>
+            <PanelWrapper>
+                <SidePanel>
+                    bruh
+                </SidePanel>
+                <CenterPanel>
+                    <Manga 
+                        src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
+                        title="Solo Leveling" 
+                        chapter="500" 
+                    />
+                    <Manga 
+                        src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
+                        title="Solo Leveling" 
+                        chapter="500" 
+                    />
+                    <Manga 
+                        src="https://www.hitc.com/static/uploads/2020/10/Screenshot_2020-10-12-Official-Manga-Trailer-Chainsaw-Man-Vol-1-VIZ1.png" 
+                        title="Solo Leveling" 
+                        chapter="500" 
+                    />
+                </CenterPanel>
+                <SidePanel>
+                    bruh
+                </SidePanel>
+            </PanelWrapper>
         </Root>
     )
 }
