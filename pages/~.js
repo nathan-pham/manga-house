@@ -1,18 +1,11 @@
 import Root from "../components/Root"
+import Logo from "../components/Root/Logo"
 import PanelWrapper from "../components/Panel/PanelWrapper"
 import CenterPanel from "../components/Panel/PanelCenter"
 import SidePanel from "../components/Panel/PanelSide"
 import MangaSearch from "../components/Manga/MangaSearch"
 import MangaCard from "../components/Manga/MangaCard"
 
-function Logo() {
-    return (
-        <div className="flex items-center">
-            <img src="/icons/apple-icon.png" className="w-12 h-12 rounded-lg shadow-lg mr-4" />
-            <h1 className="text-2xl font-semibold whitespace-nowrap">Manga House</h1>
-        </div>
-    )
-}
 
 export default function Dashboard() {
     return (
