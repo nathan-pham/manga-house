@@ -1,8 +1,8 @@
 import { OptionsOutline, SearchOutline } from "react-ionicons"
 
-export default function MangaSearch() {
+export default function MangaSearch({ inject }) {
     return (
-        <div className="relative w-full px-4 py-3 mb-4 bg-gray-100 rounded-full flex items-center overflow-hidden">
+        <div className={ ["relative px-4 py-3 bg-gray-100 rounded-full flex items-center overflow-hidden", inject].join(' ') }>
             <SearchOutline />
             <input className="w-full h-full px-2 outline-none bg-transparent" placeholder="Search comics" />
             <OptionsOutline />

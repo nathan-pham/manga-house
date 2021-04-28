@@ -1,6 +1,10 @@
-export default function SidePanel({ flex, children }) {
+export default function SidePanel({ children, left }) {
+    const inject = left
+        ? "hidden pr-4 md:block"
+        : "hidden pl-4 lg:block"
+
     return (
-        <div className="flex-auto w-24 px-4">
+        <div className={ ["w-24 flex-auto", inject].join(' ') }>
             { children }
         </div>
     )
