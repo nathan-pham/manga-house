@@ -22,7 +22,7 @@ export default function Navigation({ current }) {
         return (
             <li>
                 <a href={ href } className={ 
-                    ["flex items-center px-4 py-2 font-semibold text-lg rounded-full mb-2 hover:bg-purple-50 hover:text-purple-600", active ? "text-purple-600" : ""].join(" ") 
+                    ["flex items-center px-4 py-3 font-semibold text-lg rounded-full mb-2 hover:bg-purple-50 hover:text-purple-600", active ? "text-purple-600" : ""].join(" ") 
                 }>
                     <Icon color="inherit" />
                     <span className="ml-2">
